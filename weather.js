@@ -10,7 +10,7 @@ let onPositionUpdated = function(position) {
 
 let updateWidget = function(json) {
 
-  let Temperature = Math.round(json.main.temp)
+  let temperature = Math.round(json.main.temp)
   let symbol = json.weather[0].icon
 
   $("#temperature_reading").text("It is " + temperature + " degrees outside")
@@ -19,8 +19,6 @@ let updateWidget = function(json) {
 }
 
 let getWeather = function(latitude, longitude) {
-  let latitude = '48.8566';
-  let longitude = '2.3522';
   let apiKey = 'ca8bb4999add126c978f87ffd01d8e9c';
 
   let weatherServiceURL = 'https://api.openweathermap.org/data/2.5/weather?'
