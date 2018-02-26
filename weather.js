@@ -13,7 +13,7 @@ let updateWidget = function(data) {
 let getWeather = function(event) {
   let latitude = '48.8566';
   let longitude = '2.3522';
-  let apiKey = '4ce6f502d38ddae567bf1702b05e168c'; // REPLACE THIS VALUE with your own key.
+  let apiKey = 'ca8bb4999add126c978f87ffd01d8e9c';
 
   let weatherServiceURL = 'https://api.openweathermap.org/data/2.5/weather?'
   weatherServiceURL += 'lat=' + latitude
